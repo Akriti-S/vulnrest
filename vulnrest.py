@@ -6,7 +6,7 @@ import requests
 # listing of urls 
 urls=(
 "/list_users","list_users",
-'/user',"get_user",
+'/get_user/(.*)',"get_user",
 '/authenticate_1',"authenticate_1",
 '/authenticate_2','authenticate_2',
 '/money_transfer','money_transfer',
@@ -48,10 +48,9 @@ class list_users:
 		output=output+"]"
 		return output
 class get_user:
-	def POST(self):
+	def POST(self,user):
 		data=web.input()
 		print data
-		user=str(data.user_id)
 		token=str(data.token)
 		print token
 		a="failure"
