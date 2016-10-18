@@ -1,0 +1,5 @@
+<users>
+	<user age="30" balance="970" id="0" name="nishant" password="hulk" username="nishant" />
+	<user age="38" balance="480" id="1" name="anurag" password="magneto" username="anurag" />
+	<user age="28" balance="330" id="2" name="akriti" password="logan" username="akriti" />
+</users>
